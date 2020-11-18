@@ -6,7 +6,7 @@
   "scripts": {
     "watch:sass": "sass --no-source-map sass/main.scss css/style.css --watch",
     "prefix:css": "postcss css/style.css --use autoprefixer -o css/style.prefix.css",
-    "compress:css": "sass --style=compressed css/style.prefix.css css/style.css",
+    "compress:css": "sass --style=compressed --no-source-map css/style.prefix.css css/style.css",
     "build:css": "npm-run-all prefix:css compress:css"
   },
   "author": "Amir",
